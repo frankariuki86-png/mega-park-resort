@@ -477,7 +477,7 @@ form{display: grid;
   padding:20px;
   }
   .hero { 
-  min-height:360px;
+  min-height:460px;
   }
   }
   @media (max-width:420px){
