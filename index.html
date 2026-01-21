@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Megapark Resort.</title>
+  <meta name="description" content="Megapark Resort is a serene getaway designed to offer comfort, relaxation, and memorable experiences." />
+  <link rel="icon" type="image/png" href="photos/logo.png" >
+  <link rel="stylesheet" href="styles.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img src="photos/logo.png" style="border-radius: 20px;" alt="Megapark Resort logo" />
+        <h1 class="header-h1"><span>Megapark Resort</span></h1>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav" class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#halls">Halls</a></li>
+          <li><a href="#rooms">Accommodation</a></li>
+          <li><a href="#contact">Contact</a></li>
+           <li><a href="checkout.html" id="book-now" class="book-btn">Book now (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / HERO with 3-image carousel -->
+    <section id="home" class="hero">
+      <div class="hero-carousel" aria-live="polite">
+        <div class="slide active" style="background-image:
+         url('photos/home1.jfif'); min-height: 450px;">
+          <div class="slide-content">
+            <h1>Welcome to Megapark Resort.</h1>
+            <p>Relax in comfort, enjoy authentic Kenyan cuisine, and create unforgettable memories.</p>
+            <a href="#prices" class="btn">Explore the Resort</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: 
+        url('photos/home 2.jfif'); min-height: 450px;">
+          <div class="slide-content">
+            <h1>Authentic Kenyan & Continental Cuisine.</h1>
+            <p>Freshly prepared meals, local flavors, and a dining experience you’ll love.</p>
+            <a href="#projects" class="btn">View Our Menu</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image:
+         url('photos/home 3.webp'); min-height: 450px;">
+          <div class="slide-content">
+            <h1>Rooms, Events & Celebrations.</h1>
+            <p>Book comfortable rooms, weddings, conferences, and special events with ease.</p>
+            <a href="#services" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        
+  <div class="slide" style="background-image:url('photos/mega-park4.jfif'); min-height:450px;">
+    <div class="slide-content">
+      <h1>Perfect Venue for Events</h1>
+      <p>Weddings, conferences, and celebrations in a serene environment.</p>
+      <a href="#events" class="btn">Host an Event</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('photos/megapark5.jfif'); min-height:450px;">
+    <div class="slide-content">
+      <h1>Relax & Unwind</h1>
+      <p>Escape the noise and enjoy peaceful moments in nature.</p>
+      <a href="#about" class="btn">Discover More</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('photos/megapark6.jfif'); min-height:450px;">
+    <div class="slide-content">
+      <h1>Family-Friendly Experience</h1>
+      <p>Fun, comfort, and safety for the whole family.</p>
+      <a href="#contact" class="btn">Plan Your Visit</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('photos/megapark7.webp'); min-height:450px;">
+    <div class="slide-content">
+      <h1>Outdoor Recreation & Leisure</h1>
+      <p>Games, relaxation, and open spaces to enjoy.</p>
+      <a href="#activities" class="btn">View Activities</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('photos/megapark8.webp'); min-height:450px;">
+    <div class="slide-content">
+      <h1>Memorable Celebrations</h1>
+      <p>Create lasting memories with your loved ones.</p>
+      <a href="#events" class="btn">Celebrate With Us</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('photos/megapark9.webp'); min-height:450px;">
+    <div class="slide-content">
+      <h1>Nature, Comfort & Luxury</h1>
+      <p>A perfect blend of serenity and modern comfort.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('photos/megapark10.webp'); min-height:450px;">
+    <div class="slide-content">
+      <h1>Your Perfect Getaway</h1>
+      <p>Experience relaxation, dining, and celebration in one place.</p>
+      <a href="#contact" class="btn">Visit Us Today</a>
+    </div>
+
+        <div class="carousel-controls">
+          <button id="prevSlide" aria-label="Previous slide">&lt;</button>
+          <button id="nextSlide" aria-label="Next slide">&gt;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about container">
+       <h2>About Megapark Resort</h2>
+      <div class="about-grid">
+        <div>
+            <p><strong>Megapark Resort </strong> is a serene getaway 
+            designed to offer comfort, relaxation, and memorable
+            experiences. Nestled in a peaceful environment, 
+            we combine warm Kenyan hospitality with modern amenities 
+            to create a perfect destination for leisure and events.
+            Our resort features comfortable accommodation,
+            delicious authentic and continental cuisine,
+            and well-designed spaces for weddings,
+            conferences, and celebrations. Whether you are
+            visiting to unwind, dine, or host a special occasion,
+            Megapark Resort is committed to providing exceptional service and
+            an unforgettable experience for every guest.
+          </p>
+          
+          
+        </div>
+        <div class="about-photo">
+          <img src="photos/about.webp" alt="about-photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu container">
+      <h2>Our Menu</h2>
+
+      <div class="menu-grid">
+
+        <article class="menu-card">
+            <div class="food-menu-card">
+          <img src="photos/Nyama-Choma-1-1080x1080.jpg.webp" alt="" />
+          <div class="food-menu-body">
+          <h3>Nyama Choma</h3>
+          <p>Grilled Kenyan beef served with ugali and kachumbari.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          <strong>KES 1,200</strong>
+          <br><br>
+          <label for="quantity">Quantity:</label>
+            <select id="quantity" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+
+            <br><br>
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Make order</button>
+          </div>
+        </article>
+
+     
+        <article class="menu-card">
+            <div class="food-menu-card">
+          <img src="photos/chapati nyama.png" alt="" />
+          <div class="food-menu-body">
+          <h3>Chapati & Nyama</h3>
+          <p>Classic chapati meal with meat and greens.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          <strong>KES 1,000</strong>
+          <br><br>
+          <label for="quantity">Quantity:</label>
+            <select id="quantity" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+
+            <br><br>
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Make order</button>
+          </div>
+        </article>
+
+        <article class="menu-card">
+            <div class="food-menu-card">
+          <img src="photos/matoke.png" alt="" />
+          <div class="food-menu-body">
+          <h3>Matoke & beef</h3>
+          <p>Spiced beef matoke and kachumbari.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          <strong>KES 1,200</strong>
+          <br><br>
+          <label for="quantity">Quantity:</label>
+            <select id="quantity" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+
+            <br><br>
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Make order</button>
+          </div>
+        </article>
+
+
+        <article class="menu-card">
+            <div class="food-menu-card">
+          <img src="photos/fish.webp" alt="" />
+          <div class="food-menu-body">
+          <h3>Ugali & fish</h3>
+          <p>Grilled Kenyan fish served with ugali and greens.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          <strong>KES 1,300</strong>
+          <br><br>
+          <label for="quantity">Quantity:</label>
+            <select id="quantity" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+
+            <br><br>
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Make order</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+   <section id="events" class="container section">
+      <h3>Event Booking</h3>
+      <div class="card">
+        <p>Plan your event with our team. Fill the form to request a quote.</p>
+        <form id="event-form" class="form-grid">
+          <input name="name" placeholder="Your name" required>
+          <input type="number" placeholder="phone number" required>
+          <input name="email" placeholder="Email" required>
+          <input name="date" type="date" required>
+          <select name="type"><option>Wedding</option><option>pre-wedding</option><option>Conference</option><option>Party</option></select>
+          <textarea name="notes" placeholder="Notes (guests, requirements)"></textarea>
+          <button class="btn" type="submit">Request Quote</button>
+        </form>
+      </div>
+    </section>
+  
+
+   <section id="halls" class="section Halls container">
+      <h2>Event Halls</h2>
+
+      <div class="halls-grid">
+
+        <article class="halls-card">
+            <div class="">
+          <img src="photos/hall 1.webp" alt="" />
+          <div class="">
+          <h3>Banquet Hall</h3>
+          <p>Spacious hall for weddings and large events, accommodating up to 200 guests.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          <br><br>
+        
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Book now</button>
+          </div>
+        </article>
+
+          <article class="halls-card">
+            <div class="halls-card">
+          <img src="photos/hall 2.webp" alt="" />
+          <div class="halls-body">
+          <h3>Conference Room</h3>
+          <p>Modern conference room equipped with AV facilities for business meetings.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          
+          <br><br>
+        
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Book now</button>
+          </div>
+        </article>
+
+          <article class="halls-card">
+            <div class="halls-card">
+          <img src="photos/hall 3.webp" alt="" />
+          <div class="halls-body">
+          <h3>Outdoor Pavilion</h3>
+          <p>Beautiful outdoor space perfect for garden parties and casual gatherings.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          
+          <br><br>
+        
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Book now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+
+   <section id="rooms" class="section Halls container">
+      <h2>Accommodation</h2>
+
+      <div class="rooms-grid">
+
+        <article class="rooms-card">
+            <div class="rooms-card">
+          <img src="photos/stardard rooms.webp" alt="" />
+          <div class="rooms-body">
+          <h3>Standard Room</h3>
+          <p>Comfortable room with essential amenities for a relaxing stay.</p>
+          <br>
+          <strong>KES 5,000/night</strong> 
+
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          <br>
+        
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Book now</button>
+          </div>
+        </article>
+
+          <article class="rooms-card">
+            <div class="rooms-card">
+          <img src="photos/Deluxe Room.webp" alt="" />
+          <div class="rooms-body">
+          <h3>Deluxe Room</h3>
+          <p>Spacious room with premium amenities and a beautiful view.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          <strong>KES 8,000/night</strong>
+          <br><br>
+        
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Book now</button>
+          </div>
+        </article>
+
+          <article class="rooms-card">
+            <div class="rooms-card">
+          <img src="photos/Executive Suite.webp" alt="" />
+          <div class="rooms-body">
+          <h3>Executive Suite</h3>
+          <p>Luxurious suite with premium amenities and stunning views.</p>
+          <br>
+           <div class="card-meta">
+          <div class="product-quantity-container">
+          <strong>KES 12,000/night</strong>
+          <br><br>
+        
+          <button class="btn add-food" data-id="nyama" data-name="Nyama Choma" data-price="1200">Book now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  <section id="contact" style="background:var(--soft)">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Contact</span>
+        <h2>Get in Touch</h2>
+      </div>
+      <div></div>
+    </div>
+    <div class="contact-grid">
+      <div class="card" style="padding:16px">
+        <form id="contactForm" aria-label="Contact form" action="" method="POST">
+      
+          <input type="hidden" name="access_key" value="dc395c40-de3a-4d11-8972-7232f38987ec">
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+            <div>
+              <label for="name"><strong>Name</strong></label>
+              <input id="name" name="name" required placeholder="francis kariuki" />
+            </div>
+            <div>
+              <label for="email"><strong>Email</strong></label>
+              <input id="email" type="email" name="email" required placeholder="magapark@gmail.com" />
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+            <div>
+              <label for="program"><strong>type of inquiry</strong></label>
+              <select id="program" name="program">
+                <option>wedding Event</option>
+                <option>Graduation event</option>
+                <option>conference</option>
+                <option>Other inquiries </option>
+              </select>
+            </div>
+            <div>
+              <label for="phone"><strong>Phone</strong> <small>(optional)</small></label>
+              <input id="phone" name="phone" placeholder="+254 7xx xxx xxx" />
+            </div>
+          </div>
+
+          <div style="margin-top:12px;">
+            <label for="message"><strong>Submit</strong></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help"></textarea>
+          </div>
+
+          <button class="btn" type="submit" style="margin-top:16px;">Send Message</button>
+          <p id="formMsg" role="status" aria-live="polite" style="margin:8px 0 0"></p>
+        </form>
+      </div>
+        <div class="card map">
+          <h4>Our Location</h4>
+
+
+
+          <p>Nakuru-Sigor Road, Nakuru — Near the mololine Annex booking office</p>
+          <iframe width="100%" height="300" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3989.7704115746333!2d36.074548973201836!3d-0.2807818353500334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1768858300792!5m2!1sen!2ske"></iframe>
+        </div>
+      </div>
+    </section>
+
+   <footer class="site-footer">
+   
+      <div class="footer-info">
+         <div class="contact-details">
+         <h3>Talk to us</h3>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/254711768878" target="_blank" rel="noopener">+254 711 768 878</a></p>
+          <p><strong>Email:</strong> <a href="mailto:megapark@gmail.com">megapark@gmail.com</a></p>
+          <p><strong>Working Hours:</strong> Mon — Sun, 24 Hours</p>
+     </div>
+       <br><br>
+            <div>
+          <h4>What We Promise</h4>
+          <ul>
+            <li>Warm Kenyan hospitality and friendly service</li>
+            <li>Clean, comfortable rooms and facilities</li>
+            <li>Delicious authentic and continental cuisine</li>
+            <li>Peaceful, safe, and relaxing environment</li>
+            <li>Memorable experiences for leisure, events, and celebrations</li>
+          </ul>
+            </div>
+            <br><br>
+         <div class="social-media">
+          <strong >Connect</strong>
+          <ul style="list-style:none; padding:0; margin:8px 0 0">
+            <li><a href="https://www.facebook.com/share/1DD9trYBXc/"target="blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/bluepeaktechsolution?utm_source=qr&igsh=YnJrMTNsNHV3aGo0"target="blank">Instagram</a></li>
+            <li><a href="https://wa.me/254711768878" target="blank">WhatsApp</a></li>
+            <li><a href="https://www.tiktok.com/@bluepeaktechsolution?_r=1&_t=ZM-91mFuZxYDnw"target ="blank">Tiktok</a></li>
+          </ul>
+        </div>
+      </div>
+         
+    <div class="copy">
+        <span>© <span id="year"></span> BluePeak Tech Solutions — All rights reserved.</span>
+         <a href="#" style="display:inline-flex; align-items:center; gap:.4rem">Back to top ↑</a> 
+      </div>
+
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/254711768878" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+      <path fill="#fff" d="M20.5 3.5A11 11 0 1 0 6.4 20.6L3 21.9l1.3-3.5A11 11 0 0 0 20.5 3.5z" />
+      <path fill="#06D755" d="M12 2a10 10 0 1 0 7.07 17.07L21 22l-2.93-.93A10 10 0 0 0 12 2z" opacity="0.0"/>
+      <path fill="#fff" d="M17.3 14.2c-.3-.15-1.9-.95-2.2-1.05-.3-.1-.5-.15-.7.15-.2.3-.8 1.05-.95 1.25-.15.2-.3.25-.55.08-.25-.15-1.05-.39-2-1.22-.74-.66-1.24-1.45-1.38-1.75-.14-.3 0-.46.12-.61.12-.12.25-.3.37-.45.12-.15.16-.25.25-.42.08-.15.04-.3-.02-.45-.06-.15-.7-1.7-.96-2.33-.25-.6-.5-.52-.7-.53-.18-.01-.4-.01-.6-.01l-.5.01c-.25 0-.65.08-.99.38-.34.29-1.3 1.27-1.3 3.1 0 1.82 1.33 3.57 1.52 3.82.2.25 2.62 4 6.35 5.6 3.73 1.6 3.73 1.07 4.4 1.01.6-.06 1.9-.77 2.17-1.52.28-.75.28-1.4.2-1.52-.08-.12-.28-.2-.59-.34z"/>
+    </svg>
+  </a>
+
+  </main>
+  <script src="script.js"></script>
+  </body>
+</html>
